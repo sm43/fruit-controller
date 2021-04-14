@@ -1,0 +1,24 @@
+# permissions for end users to edit fruits.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: fruit-editor-role
+rules:
+- apiGroups:
+  - eat.sm43.dev
+  resources:
+  - fruits
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - eat.sm43.dev
+  resources:
+  - fruits/status
+  verbs:
+  - get

@@ -1,0 +1,7 @@
+apiVersion: eat.sm43.dev/v1
+kind: Fruit
+metadata:
+  name: fruit-sample
+spec:
+  # Add fields here
+  foo: bar

@@ -1,3 +1,7 @@
 domain: sm43.dev
 repo: github.com/sm43/fruit-controller
+resources:
+- group: eat
+  kind: Fruit
+  version: v1
 version: "2"

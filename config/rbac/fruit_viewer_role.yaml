@@ -1,0 +1,20 @@
+# permissions for end users to view fruits.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: fruit-viewer-role
+rules:
+- apiGroups:
+  - eat.sm43.dev
+  resources:
+  - fruits
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - eat.sm43.dev
+  resources:
+  - fruits/status
+  verbs:
+  - get
