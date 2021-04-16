@@ -39,11 +39,12 @@ type FruitStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Status of fruit created 
+	// Status of fruit created
 	Created bool `json:"created,omitempty"`
 }
 
 // +kubebuilder:object:root=true
+// +kubebuilder:subresource:status
 
 // Fruit is the Schema for the fruits API
 type Fruit struct {
